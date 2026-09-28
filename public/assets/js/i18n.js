@@ -133,7 +133,7 @@ window.IKATA_I18N = {
     'form.pAgency': 'Agency',
     'form.message': 'Message',
     'form.msgPh': 'E.g. I want to test a live stream campaign next month.',
-    'form.consent': 'I agree that Ikatá may use this data only to reply to my message, as described in the <a href="privacidade.html">Privacy Notice</a>.',
+    'form.consent': 'I agree that Ikatá may use this data only to reply to my message, as described in the <a href="privacidade">Privacy Notice</a>.',
     'form.submit': 'Let’s talk',
     'form.errName': 'Please tell us your name.',
     'form.errEmail': 'Could you check the email? Something seems to be missing.',
@@ -156,7 +156,7 @@ window.IKATA_I18N = {
     'legal.back': 'Back',
 
     'cookie.title': 'About cookies',
-    'cookie.text': 'We use essential cookies to keep the site working and remember your choices. With your permission, we also use measurement cookies to understand how the site is used. Learn more in our <a href="privacidade.html#cookies">Privacy Notice</a>.',
+    'cookie.text': 'We use essential cookies to keep the site working and remember your choices. With your permission, we also use measurement cookies to understand how the site is used. Learn more in our <a href="privacidade#cookies">Privacy Notice</a>.',
     'cookie.essential': 'Essential only',
     'cookie.accept': 'Accept all'
   },

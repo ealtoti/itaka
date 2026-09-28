@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "itaka-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-28",
+  "workers_dev": true,
+  "preview_urls": true,
+
+  // Arquivos do site. O Worker roda antes para redirecionar o www,
+  // atender /api/contato e aplicar os cabeçalhos de segurança.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+
+  // Domínios ligados automaticamente no deploy (a zona itaka.pro precisa estar nesta conta)
+  "routes": [
+    { "pattern": "itaka.pro", "custom_domain": true },
+    { "pattern": "www.itaka.pro", "custom_domain": true }
+  ],
+
+  // Mensagens do formulário de contato
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "itaka-contatos",
+      "database_id": "37ce0c9c-469e-4a72-b45c-be965f05b2de",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  "observability": { "enabled": true }
+}

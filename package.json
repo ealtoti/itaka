@@ -1,0 +1,13 @@
+{
+  "name": "itaka-site",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply itaka-contatos --remote",
+    "db:contatos": "wrangler d1 execute itaka-contatos --remote --command \"SELECT * FROM contatos ORDER BY id DESC LIMIT 50\""
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

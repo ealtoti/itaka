@@ -5,7 +5,7 @@ let chromium;
 try { ({ chromium } = require('playwright')); } catch (e) { ({ chromium } = require('/opt/node22/lib/node_modules/playwright')); }
 
 const root = path.resolve(__dirname, '..');
-const img = (f) => path.join(root, 'assets', 'img', f);
+const img = (f) => path.join(root, 'public', 'assets', 'img', f);
 const file = (p) => 'file://' + path.join(root, p);
 
 (async () => {
@@ -20,7 +20,7 @@ const file = (p) => 'file://' + path.join(root, p);
 
   for (const [name, size] of [['favicon-32.png', 32], ['apple-touch-icon.png', 180]]) {
     await page.setViewportSize({ width: size, height: size });
-    await page.setContent(`<style>html,body{margin:0;background:transparent}</style><img src="${file('assets/img/favicon.svg')}" width="${size}" height="${size}" style="display:block">`);
+    await page.setContent(`<style>html,body{margin:0;background:transparent}</style><img src="${file('public/assets/img/favicon.svg')}" width="${size}" height="${size}" style="display:block">`);
     await page.waitForTimeout(200);
     await page.screenshot({ path: img(name), omitBackground: true });
   }

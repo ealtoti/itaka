@@ -6,13 +6,13 @@
 
   /* ------------------------------------------------------------------
      Configuração
-     formEndpoint: URL que recebe o formulário (Formspree, Getform, API própria…).
-     Enquanto estiver vazio, o envio abre o app de e-mail com a mensagem pronta
-     para contactEmail.
+     formEndpoint: rota que recebe o formulário. No ar, é o Worker em src/worker.js,
+     que grava no banco D1. Se ficar vazio, o envio abre o app de e-mail com a
+     mensagem pronta para contactEmail.
      ------------------------------------------------------------------ */
   var CONFIG = {
-    formEndpoint: '',
-    contactEmail: 'contato@ikata.com.br',
+    formEndpoint: '/api/contato',
+    contactEmail: 'contato@itaka.pro',
     social: {
       instagram: '',
       linkedin: '',

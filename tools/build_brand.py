@@ -10,7 +10,7 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
 ROOT = Path(__file__).resolve().parent.parent
-IMG = ROOT / "assets" / "img"
+IMG = ROOT / "public" / "assets" / "img"
 
 BRASA, AMBAR, CARVAO, AREIA = "#FF5A1F", "#FFB020", "#16120F", "#F4EEE6"
 
