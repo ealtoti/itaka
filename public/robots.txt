@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://itaka.pro/sitemap.xml
+Sitemap: https://ikata.pro/sitemap.xml

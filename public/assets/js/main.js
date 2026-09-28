@@ -12,7 +12,7 @@
      ------------------------------------------------------------------ */
   var CONFIG = {
     formEndpoint: '/api/contato',
-    contactEmail: 'contato@itaka.pro',
+    contactEmail: 'contato@ikata.pro',
     social: {
       instagram: '',
       linkedin: '',

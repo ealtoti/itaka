@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "itaka-site",
+  "name": "ikata-site",
   "main": "src/worker.js",
   "compatibility_date": "2026-09-28",
   "workers_dev": true,
@@ -16,10 +16,10 @@
     "not_found_handling": "404-page"
   },
 
-  // Domínios ligados automaticamente no deploy (a zona itaka.pro precisa estar nesta conta)
+  // Domínios ligados automaticamente no deploy (a zona ikata.pro precisa estar nesta conta)
   "routes": [
-    { "pattern": "itaka.pro", "custom_domain": true },
-    { "pattern": "www.itaka.pro", "custom_domain": true }
+    { "pattern": "ikata.pro", "custom_domain": true },
+    { "pattern": "www.ikata.pro", "custom_domain": true }
   ],
 
   // Mensagens do formulário de contato

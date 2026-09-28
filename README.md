@@ -1,8 +1,8 @@
 # Ikatá · site institucional
 
-Site one-page da Ikatá em HTML, CSS e JavaScript puros, publicado como Cloudflare Worker em **https://itaka.pro**.
+Site one-page da Ikatá em HTML, CSS e JavaScript puros, publicado como Cloudflare Worker em **https://ikata.pro**.
 
-O Worker (`src/worker.js`) faz quatro coisas: serve os arquivos de `public/`, redireciona `www.itaka.pro` para `itaka.pro`, recebe o formulário de contato em `POST /api/contato` e aplica os cabeçalhos de segurança (CSP, HSTS e afins).
+O Worker (`src/worker.js`) faz quatro coisas: serve os arquivos de `public/`, redireciona `www.ikata.pro` para `ikata.pro`, recebe o formulário de contato em `POST /api/contato` e aplica os cabeçalhos de segurança (CSP, HSTS e afins).
 
 ## Estrutura
 
@@ -34,11 +34,11 @@ O jeito recomendado é ligar o repositório à Cloudflare, assim cada push no br
 
 1. No painel da Cloudflare, vá em **Workers & Pages → Create → Import a repository** e escolha `ealtoti/itaka`.
 2. Deixe o comando de deploy como `npx wrangler deploy`. Não precisa de comando de build.
-3. Pronto. O `wrangler.jsonc` já liga os domínios `itaka.pro` e `www.itaka.pro` ao Worker e conecta o banco `itaka-contatos`.
+3. Pronto. O `wrangler.jsonc` já liga os domínios `ikata.pro` e `www.ikata.pro` ao Worker e conecta o banco `itaka-contatos`.
 
 Para publicar direto do computador: `npx wrangler login` e depois `npm run deploy`.
 
-Se o deploy reclamar que já existe registro DNS para `itaka.pro` ou `www`, apague o registro antigo em **DNS → Records** e rode de novo.
+Se o deploy reclamar que já existe registro DNS para `ikata.pro` ou `www`, apague o registro antigo em **DNS → Records** e rode de novo.
 
 ## Formulário de contato
 

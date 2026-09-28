@@ -1,10 +1,10 @@
 /* Ikatá · Worker do site
    - serve os arquivos de public/ (binding ASSETS)
-   - redireciona www.itaka.pro para itaka.pro
+   - redireciona www.ikata.pro para ikata.pro
    - recebe o formulário em POST /api/contato e grava no D1 (binding DB)
    - aplica cabeçalhos de segurança em todas as respostas */
 
-const CANONICAL_HOST = 'itaka.pro';
+const CANONICAL_HOST = 'ikata.pro';
 const PERFIS = new Set(['marca', 'agencia', 'creator']);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const MAX_BODY = 10_000;
