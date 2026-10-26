@@ -33,9 +33,10 @@ html = f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
   .cover::after {{ content: ""; position: absolute; left: 50%; bottom: -120mm; width: 260mm; height: 190mm; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(255,90,31,.22), rgba(255,90,31,0)); }}
   .cover img {{ width: 62mm; }}
   .cover h1 {{ font-family: "Space Grotesk"; font-size: 40pt; line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 8mm; max-width: 150mm; }}
+  .cover .lead em {{ color: #A89F97; }}
   .cover .lead p {{ font-size: 13pt; color: #A89F97; margin: 0; max-width: 130mm; }}
   .cover .foot {{ font-size: 9pt; color: #8A817A; letter-spacing: .08em; text-transform: uppercase; position: relative; z-index: 1; }}
-  h2 {{ font-family: "Space Grotesk"; font-size: 17pt; color: #16120F; margin: 9mm 0 3mm; letter-spacing: -0.01em; page-break-after: avoid; }}
+  h2 {{ font-family: "Space Grotesk"; font-size: 17pt; color: #16120F; margin: 9mm 0 3mm; letter-spacing: -0.01em; break-after: avoid; break-inside: avoid; }}
   h2::before {{ content: ""; display: block; width: 10mm; height: 1.2mm; background: #FF5A1F; border-radius: 1mm; margin-bottom: 3mm; }}
   h2:first-child {{ margin-top: 0; }}
   p {{ margin: 0 0 3.2mm; }}
